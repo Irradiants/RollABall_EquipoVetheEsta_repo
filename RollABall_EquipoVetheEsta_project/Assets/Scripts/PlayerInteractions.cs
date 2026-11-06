@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    [Header("Respawn System")]
+    public Transform respawnPoint;
+    public Rigidbody playerRB;
     public int points;
     void Start()
     {
@@ -13,12 +17,23 @@ public class PlayerInteractions : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider pickup)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (pickup.gameObject.CompareTag("PickUp"))
+        if (collision.gameObject.CompareTag("PickUp"))
         {
             points++;
-            pickup.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
         }
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Respawn();
+        }
+    }
+
+    void Respawn()
+    {
+        int escenaActual = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(escenaActual);
     }
 }
