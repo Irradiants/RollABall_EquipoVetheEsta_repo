@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 1468981983}
   - component: {fileID: 1468981978}
   - component: {fileID: 1468981984}
+  - component: {fileID: 1468981985}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -725,6 +726,19 @@ MonoBehaviour:
   roadSize: 20
   prefabCollection:
   - {fileID: 8893666795881011529, guid: 0c8ee4e2ee655f840a362473762e21d3, type: 3}
+--- !u!114 &1468981985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468981977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df2150d59ab8e9469dd1ef50f8af300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractions
+  points: 0
 --- !u!1001 &1553691725
 PrefabInstance:
   m_ObjectHideFlags: 0

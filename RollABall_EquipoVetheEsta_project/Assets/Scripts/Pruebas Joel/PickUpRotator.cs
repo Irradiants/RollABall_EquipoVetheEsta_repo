@@ -22,7 +22,7 @@ public class Rotator : MonoBehaviour
         while(true)
         {
             visual.Rotate(Vector3.up, rotationSpeed *  Time.deltaTime, Space.World);
-            visual.position = new Vector3(0, Mathf.Sin(Time.time * ySpeed) * yDistance + 0.5f, 0);
+            visual.position = new Vector3(visual.position.x, Mathf.Sin(Time.time * ySpeed) * yDistance + 0.5f, visual.position.z);
             yield return null;
         }
     }
