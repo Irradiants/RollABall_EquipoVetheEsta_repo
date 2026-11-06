@@ -16,7 +16,7 @@ public class BasicMovement : MonoBehaviour
 
     void Start()
     {
-        Movement();
+        PermanentMovement();
     }
 
     void Update()
@@ -24,9 +24,14 @@ public class BasicMovement : MonoBehaviour
         
     }
 
-    void Movement()
+    void PermanentMovement()
     {
         playerRB.AddForce(Vector3.forward * velocidad);
+    }
+
+    void inputMovement()
+    {
+
     }
 
     void Jump()
