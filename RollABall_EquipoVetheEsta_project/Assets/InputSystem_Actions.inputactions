@@ -35,6 +35,16 @@
                     "interactions": "Hold(duration=0.4)",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "Bend",
+                    "type": "Button",
+                    "id": "c7f8fcdf-b568-46ff-8066-b11ab14e2a6b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -79,6 +89,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38ed9de9-39b1-40f9-bc05-7b8f3d231b78",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bend",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

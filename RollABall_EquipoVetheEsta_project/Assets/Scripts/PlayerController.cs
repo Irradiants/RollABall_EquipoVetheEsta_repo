@@ -10,8 +10,9 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed = 5f;
     public float extraSpeed = 2.5f;
     public float accelerationTime = 20f;
+    public float escalaAgachadaY = 0.5f;
+    public float escalaAgachadaXZ = 1.5f;
 
-    private float velocidadInicial;
     private float velocidadMaxima;
 
     [Header("Lanes Parameters")]
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public float distanciaCarril = 1.5f;
     private int carrilActual = 0;
     private float objetivoX;
-    bool movimiento = false;
+
 
     [Header("Jump Parameters")]
     public float jumpForce = 6;
@@ -27,7 +28,6 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        velocidadInicial = playerSpeed;
         velocidadMaxima = playerSpeed + extraSpeed;
     }
 
@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = Mathf.MoveTowards(pos.x, objetivoX, cambioCarrilSpeed * Time.deltaTime);
         transform.position = pos;
+
     }
 
     private void OnCollisionEnter(Collision collision)
