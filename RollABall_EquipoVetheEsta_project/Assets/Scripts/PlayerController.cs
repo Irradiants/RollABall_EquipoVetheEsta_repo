@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed = 5f;
     public float extraSpeed = 2.5f;
     public float accelerationTime = 20f;
-    public float escalaAgachadaY = 0.5f;
-    public float escalaAgachadaXZ = 1.5f;
 
     private float velocidadMaxima;
 
