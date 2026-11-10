@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6647914646357413714, guid: 63fcf1914f0144f4a821fad4dc5f4ba3, type: 3}
+      propertyPath: displacement
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 8893666795881011529, guid: 63fcf1914f0144f4a821fad4dc5f4ba3, type: 3}
       propertyPath: m_Name
       value: _NoUsar_
@@ -565,6 +569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6647914646357413714, guid: 63fcf1914f0144f4a821fad4dc5f4ba3, type: 3}
+      propertyPath: displacement
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 8893666795881011529, guid: 63fcf1914f0144f4a821fad4dc5f4ba3, type: 3}
       propertyPath: m_Name
       value: _NoUsar_ (1)
@@ -640,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2743673989155577548, guid: 0e19faacfac01364b820d0fdd1f75d7f, type: 3}
       propertyPath: tiempoRestante
-      value: 90
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3448641818667126535, guid: 0e19faacfac01364b820d0fdd1f75d7f, type: 3}
       propertyPath: m_AnchoredPosition.y
