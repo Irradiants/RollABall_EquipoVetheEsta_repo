@@ -4,7 +4,9 @@ using UnityEngine.UIElements;
 
 public class RoadGenerator : MonoBehaviour
 {
-    public int roadSize = 10;
+    public int prefabsInstances = 20;
+    public float instancesDistance = 10f;
+    public float factorSeparacion = 1.75f;
 
     public GameObject[] prefabCollection;
 
@@ -21,15 +23,26 @@ public class RoadGenerator : MonoBehaviour
     void RoadInstance()
     {
         int roadInstance = 1;
-        Vector3 roadPosition = Vector3.zero;
+        Vector3 roadPosition = new Vector3(0,0,40);
 
-        while (roadInstance <= roadSize)
+        while (roadInstance <= prefabsInstances)
         {
             GameObject rndObject = prefabCollection[Random.Range(0,prefabCollection.Length)];
-            Debug.Log(rndObject);
-            Instantiate(rndObject, roadPosition, Quaternion.identity);
+            GameObject instance = Instantiate(rndObject, roadPosition, Quaternion.identity);
             roadInstance++;
-            roadPosition.z += 10f;
+            SepararHijos(instance);
+            roadPosition.z += instancesDistance * factorSeparacion;
+
+        }
+    }
+
+    void SepararHijos(GameObject instancia)
+    {
+        foreach (Transform hijo in instancia.transform)
+        {
+            Vector3 p = hijo.localPosition;
+            p.z *= factorSeparacion;
+            hijo.localPosition = p;
         }
     }
 }

@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena_Mario.unity
     guid: d0811dfb1011292408bf2ef5cebe0f59
+  - enabled: 1
+    path: Assets/Scenes/Win_Scene.unity
+    guid: e42db23a8772f9d4383871e455ea758e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 56837caae4abc0f4e94c246af8773c48, type: 3}
   m_UseUCBPForAssetBundles: 0

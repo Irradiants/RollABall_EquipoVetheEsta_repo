@@ -3,10 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    [Header("Respawn System")]
-    public Transform respawnPoint;
-    public Rigidbody playerRB;
-    public int points;
     void Start()
     {
         
@@ -19,11 +15,6 @@ public class PlayerInteractions : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("PickUp"))
-        {
-            points++;
-            collision.gameObject.SetActive(false);
-        }
 
         if (collision.gameObject.CompareTag("Obstacle"))
         {
