@@ -288,7 +288,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2179908262749560071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f57910ec403fab541afb280fd46cf50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 32ae687f0525b664db523c37c72faa6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadSwitcher
   displacement: 200

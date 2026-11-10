@@ -722,7 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2743673989155577548, guid: 0e19faacfac01364b820d0fdd1f75d7f, type: 3}
       propertyPath: tiempoRestante
-      value: 45
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3448641818667126535, guid: 0e19faacfac01364b820d0fdd1f75d7f, type: 3}
       propertyPath: m_AnchoredPosition.y
